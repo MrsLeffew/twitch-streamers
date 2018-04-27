@@ -1,0 +1,38 @@
+body {
+  background-color: #000000;
+}
+
+.streamers {
+  background-color: #4b367c;
+  color: #b19dd8;
+  margin-bottom: 1px;
+
+}
+
+.icon {
+  border-color: #b19dd8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+  height: 50px;
+  margin: 5px;
+}
+
+#buttons {
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #b19dd8;
+  text-align: center;
+}
+
+#whole {
+  margin: 15px 15% 10px 15%;
+}
+
+button {
+  height: 40px;
+}
+
+.active {
+  background-color: blue;
+}
