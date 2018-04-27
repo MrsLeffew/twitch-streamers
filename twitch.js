@@ -1,11 +1,10 @@
 const channels = ['riotgames', 'freecodecamp', 'puppers', 'nugiyen', 'tru3ta1ent'];
-let data = []; // [name: '', logo: '', status: '', url: '', game: '']
+let data = [];
 
 const url = (type, channel) => (`https://wind-bow.gomix.me/twitch-api/${type}/${channel}?callback=?`);
 
 const fetchChannelData = (channel) => (
   $.getJSON(url('channels', channel), response => {
-    //console.log('channel', response);
     data.push({
       name: response.name,
       logo: response.logo,
@@ -25,8 +24,6 @@ const fetchStreamData = (channel) => (
     console.log('streams', response);
     //filter through stream for live responses
     const objIndex = data.findIndex(obj => obj.name.toLowerCase() === channel.toLowerCase());
-
-    // console.log(2, response.stream.channel.status);
 
     response.stream === null ? data[objIndex].stream = "Offline" : data[objIndex].stream = "Online";
 
