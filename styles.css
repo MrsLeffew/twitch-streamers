@@ -6,7 +6,7 @@ body {
   background-color: #4b367c;
   color: #b19dd8;
   margin-bottom: 1px;
-
+  text-align: center;
 }
 
 .icon {
@@ -18,9 +18,7 @@ body {
   margin: 5px;
 }
 
-#buttons {
-  margin-left: 0%;
-  margin-right: 0%;
+#head {
   background-color: #b19dd8;
   text-align: center;
 }
@@ -31,8 +29,14 @@ body {
 
 button {
   height: 40px;
+  background-color: #777777;
 }
 
-.active {
-  background-color: blue;
+.active, .btn:hover {
+  background-color: #333333;
+  color: white;
+
+}
+.btn.focus, .btn:focus, .btn:hover {
+  color: white;
 }
